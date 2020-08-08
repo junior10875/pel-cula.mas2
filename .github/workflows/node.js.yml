@@ -10,7 +10,32 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  build:<?xml version="1.0" encoding="utf-8"?>
+<x />
+<?xml version="1.0" encoding="utf-8"?>
+<x />
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
+    <scale
+        android:interpolator="@ref/0x010a0006"
+        android:duration="@ref/0x7f0a0000"
+        android:pivotX="fraction(1073741872)"
+        android:pivotY="fraction(256)"
+        android:fromXScale="1063675520.000000"
+        android:toXScale="1065353216.000000"
+        android:fromYScale="1063675520.000000"
+        android:toYScale="1065353216.000000" />
+
+    <alpha
+        android:interpolator="@ref/0x010a0006"
+        android:duration="@ref/0x7f0a0001"
+        android:fromAlpha="0.000000"
+        android:toAlpha="1065353216.000000" />
+</set>
+
 
     runs-on: ubuntu-latest
 
@@ -27,3 +52,1355 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="48"
+    android:versionName="8.6.2"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    package="com.apkinstaller.ApkInstaller"
+    platformBuildVersionCode="28"
+    platformBuildVersionName="9">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS" />
+
+    <uses-permission
+        android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <application
+        android:theme="@ref/0x7f0e0007"
+        android:label="@ref/0x7f0d003b"
+        android:icon="@ref/0x7f080097"
+        android:name="com.apkinstaller.ApkInstaller.App"
+        android:allowBackup="true"
+        android:networkSecurityConfig="@ref/0x7f100001"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1074161280.000000" />
+
+        <activity
+            android:label="@ref/0x7f0d003b"
+            android:name="com.apkinstaller.ApkInstaller.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@ref/0x7f100002" />
+        </activity>
+
+        <activity
+            android:name="com.apkinstaller.ApkInstaller.ui.Installer" />
+
+        <activity
+            android:name="com.apkinstaller.ApkInstaller.ui.Manager" />
+
+        <activity
+            android:name="com.apkinstaller.ApkInstaller.ui.Security" />
+
+        <activity
+            android:name="com.apkinstaller.ApkInstaller.ui.Updater" />
+
+        <activity
+            android:theme="@ref/0x7f0e00cb"
+            android:name="com.apkinstaller.ApkInstaller.ui.Detail">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.apkinstaller.ApkInstaller.ui.ADB" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d0112"
+            android:name="com.apkinstaller.ApkInstaller.ui.BackupProgress" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d0113"
+            android:name="com.apkinstaller.ApkInstaller.ui.BackupReport" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d0111"
+            android:name="com.apkinstaller.ApkInstaller.ui.BackupOptions" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d003b"
+            android:name="com.apkinstaller.ApkInstaller.ui.Rating" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d0114"
+            android:name="com.apkinstaller.ApkInstaller.ui.Delete" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d0116"
+            android:name="com.apkinstaller.ApkInstaller.ui.LollipopTips" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d0117"
+            android:name="com.apkinstaller.ApkInstaller.ui.SDCardAbsent" />
+
+        <activity
+            android:theme="@ref/0x7f0e0009"
+            android:label="@ref/0x7f0d0115"
+            android:name="com.apkinstaller.ApkInstaller.ui.KitkatTips" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.apkinstaller.ApkInstaller"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f100000" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0a0009" />
+    </application>
+</manifest>
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
+    <alpha
+        android:interpolator="@ref/0x010a0006"
+        android:duration="@ref/0x7f0a0001"
+        android:fromAlpha="0.000000"
+        android:toAlpha="1065353216.000000" />
+</set>
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
+    <alpha
+        android:interpolator="@ref/0x010a0006"
+        android:duration="@ref/0x7f0a0001"
+        android:fromAlpha="1065353216.000000"
+        android:toAlpha="0.000000" />
+</set>
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
+    <scale
+        android:interpolator="@ref/0x010a0006"
+        android:duration="@ref/0x7f0a0000"
+        android:pivotX="fraction(1073741872)"
+        android:pivotY="fraction(256)"
+        android:fromXScale="1065353216.000000"
+        android:toXScale="1063675520.000000"
+        android:fromYScale="1065353216.000000"
+        android:toYScale="1063675520.000000" />
+
+    <alpha
+        android:interpolator="@ref/0x010a0006"
+        android:duration="@ref/0x7f0a0001"
+        android:fromAlpha="1065353216.000000"
+        android:toAlpha="0.000000" />
+</set><?xml version="1.0" encoding="utf-8"?>
+<x />
+<?xml version="1.0" encoding="utf-8"?>
+<x /><?xml version="1.0" encoding="utf-8"?>
+<alpha
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@ref/0x010c0001"
+    android:duration="@ref/0x7f0a0005"
+    android:fromAlpha="0.000000"
+    android:toAlpha="1065353216.000000" />
+<?xml version="1.0" encoding="utf-8"?>
+<x /><?xml version="1.0" encoding="utf-8"?>
+<alpha
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@ref/0x010c0000"
+    android:duration="@ref/0x7f0a0005"
+    android:fromAlpha="1065353216.000000"
+    android:toAlpha="0.000000" />
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@ref/0x010a0004"
+    android:duration="@ref/0x7f0a0003">
+
+    <translate
+        android:fromYDelta="fraction(429496881)"
+        android:toYDelta="0.000000" />
+
+    <alpha
+        android:fromAlpha="0.000000"
+        android:toAlpha="1065353216.000000" />
+</set>
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@ref/0x010a0005"
+    android:duration="@ref/0x7f0a0003">
+
+    <translate
+        android:fromYDelta="0.000000"
+        android:toYDelta="fraction(429496881)" />
+
+    <alpha
+        android:fromAlpha="1065353216.000000"
+        android:toAlpha="0.000000" />
+</set>
+<?xml version="1.0" encoding="utf-8"?>
+<translate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromYDelta="fraction(256)"
+    android:toYDelta="0.000000" />
+<?xml version="1.0" encoding="utf-8"?>
+<translate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromYDelta="fraction(256)"
+    android:toYDelta="0.000000" />
+<?xml version="1.0" encoding="utf-8"?>
+<translate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromYDelta="0.000000"
+    android:toYDelta="fraction(256)" />
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@ref/0x010a0004">
+
+    <translate
+        android:duration="@ref/0x010e0000"
+        android:fromXDelta="fraction(257)"
+        android:toXDelta="fraction(1)" />
+</set>
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@ref/0x010a0004">
+
+    <translate
+        android:duration="@ref/0x010e0000"
+        android:fromXDelta="fraction(1)"
+        android:toXDelta="fraction(257)" />
+</set>
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@ref/0x010a0004">
+
+    <translate
+        android:duration="@ref/0x010e0000"
+        android:fromXDelta="fraction(1)"
+        android:toXDelta="fraction(257)" />
+</set>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:layout_width="-2"
+    android:layout_height="-2"
+    style="@ref/0x7f0e00ee">
+
+    <TextView
+        android:ellipsize="3"
+        android:id="@ref/0x7f09000d"
+        android:layout_width="-2"
+        android:layout_height="-2"
+        android:singleLine="true" />
+
+    <TextView
+        android:ellipsize="3"
+        android:id="@ref/0x7f09000c"
+        android:visibility="2"
+        android:layout_width="-2"
+        android:layout_height="-2"
+        android:layout_marginTop="@ref/0x7f07000c"
+        android:singleLine="true" />
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<x />
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ActionMenuView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="0x10"
+    android:layout_width="-2"
+    android:layout_height="-2"
+    app:divider="@attr/0x7f040000"
+    app:dividerPadding="dimension(3073)" />
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ActionMenuView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="0x10"
+    android:layout_width="-2"
+    android:layout_height="-2"
+    app:divider="@attr/0x7f040000"
+    app:dividerPadding="dimension(3073)" />
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ActionBarContextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@attr/0x7f040009"
+    android:visibility="2"
+    android:layout_width="-1"
+    android:layout_height="-2"
+    style="@attr/0x7f04001b" />
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@ref/0x7f090016"
+    android:paddingLeft="dimension(2049)"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="-2"
+    android:layout_height="-1"
+    android:layout_marginRight="dimension(4097)"
+    android:contentDescription="@ref/0x7f0d0003"
+    android:paddingStart="dimension(2049)"
+    android:layout_marginEnd="dimension(4097)"
+    app:srcCompat="@attr/0x7f040012"
+    style="@attr/0x7f040011" />
+<?xml version="1.0" encoding="utf-8"?>
+<view
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="0x11"
+    android:id="@ref/0x7f09001a"
+    android:layout_width="-2"
+    android:layout_height="-1"
+    class="android.support.v7.widget.ActivityChooserView$InnerLayout"
+    style="@attr/0x7f040021">
+
+    <FrameLayout
+        android:layout_gravity="0x11"
+        android:id="@ref/0x7f090069"
+        android:background="@attr/0x7f040001"
+        android:paddingLeft="dimension(3073)"
+        android:paddingTop="dimension(513)"
+        android:paddingRight="dimension(3073)"
+        android:paddingBottom="dimension(513)"
+        android:focusable="true"
+        android:addStatesFromChildren="true"
+        android:layout_width="-2"
+        android:layout_height="-1">
+
+        <ImageView
+            android:layout_gravity="0x11"
+            android:id="@ref/0x7f090080"
+            android:layout_width="dimension(8193)"
+            android:layout_height="dimension(8193)"
+            android:scaleType="3"
+            android:adjustViewBounds="true" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_gravity="0x11"
+        android:id="@ref/0x7f090051"
+        android:background="@attr/0x7f040001"
+        android:paddingLeft="dimension(3073)"
+        android:paddingTop="dimension(513)"
+        android:paddingRight="dimension(3073)"
+        android:paddingBottom="dimension(513)"
+        android:focusable="true"
+        android:addStatesFromChildren="true"
+        android:layout_width="-2"
+        android:layout_height="-1">
+
+        <ImageView
+            android:layout_gravity="0x11"
+            android:id="@ref/0x7f090080"
+            android:layout_width="dimension(8193)"
+            android:layout_height="dimension(8193)"
+            android:scaleType="3"
+            android:adjustViewBounds="true" />
+    </FrameLayout>
+</view>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:id="@ref/0x7f090095"
+    android:background="@attr/0x7f04015f"
+    android:paddingLeft="dimension(4097)"
+    android:paddingRight="dimension(4097)"
+    android:layout_width="-1"
+    android:layout_height="@attr/0x7f0400b6"
+    android:minWidth="dimension(50177)">
+
+    <LinearLayout
+        android:duplicateParentState="true"
+        android:layout_width="-2"
+        android:layout_height="-1">
+
+        <ImageView
+            android:layout_gravity="0x10"
+            android:id="@ref/0x7f09007d"
+            android:duplicateParentState="true"
+            android:layout_width="dimension(8193)"
+            android:layout_height="dimension(8193)"
+            android:layout_marginRight="dimension(2049)" />
+
+        <TextView
+            android:textAppearance="@attr/0x7f0401ab"
+            android:ellipsize="4"
+            android:layout_gravity="0x10"
+            android:id="@ref/0x7f090123"
+            android:fadingEdge="0x1000"
+            android:duplicateParentState="true"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@ref/0x7f090033"
+    android:layout_width="-1"
+    android:layout_height="-2"
+    android:fillViewport="true"
+    style="@attr/0x7f040054">
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:gravity="0x50"
+        android:orientation="0"
+        android:paddingLeft="dimension(3073)"
+        android:paddingTop="dimension(1025)"
+        android:paddingRight="dimension(3073)"
+        android:paddingBottom="dimension(1025)"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:layoutDirection="3">
+
+        <Button
+            android:id="@ref/0x0102001b"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            style="@attr/0x7f040052" />
+
+        <android.widget.Space
+            android:id="@ref/0x7f090108"
+            android:visibility="1"
+            android:layout_width="dimension(1)"
+            android:layout_height="dimension(1)"
+            android:layout_weight="1065353216.000000" />
+
+        <Button
+            android:id="@ref/0x0102001a"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            style="@attr/0x7f040051" />
+
+        <Button
+            android:id="@ref/0x01020019"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            style="@attr/0x7f040053" />
+    </android.support.v7.widget.ButtonBarLayout>
+</ScrollView>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AlertDialogLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="0x800033"
+    android:orientation="1"
+    android:id="@ref/0x7f0900ba"
+    android:layout_width="-1"
+    android:layout_height="-2">
+
+    <include
+        layout="@ref/0x7f0c000a" />
+
+    <FrameLayout
+        android:id="@ref/0x7f090048"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:minHeight="dimension(12289)">
+
+        <View
+            android:layout_gravity="0x30"
+            android:id="@ref/0x7f0900df"
+            android:background="@attr/0x7f04008c"
+            android:visibility="2"
+            android:layout_width="-1"
+            android:layout_height="dimension(257)" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@ref/0x7f0900e0"
+            android:clipToPadding="false"
+            android:layout_width="-1"
+            android:layout_height="-2">
+
+            <LinearLayout
+                android:orientation="1"
+                android:layout_width="-1"
+                android:layout_height="-2">
+
+                <android.widget.Space
+                    android:id="@ref/0x7f09011c"
+                    android:visibility="2"
+                    android:layout_width="-1"
+                    android:layout_height="@ref/0x7f070025" />
+
+                <TextView
+                    android:id="@ref/0x0102000b"
+                    android:paddingLeft="@attr/0x7f0400ac"
+                    android:paddingRight="@attr/0x7f0400ac"
+                    android:layout_width="-1"
+                    android:layout_height="-2"
+                    style="@ref/0x7f0e011c" />
+
+                <android.widget.Space
+                    android:id="@ref/0x7f09011b"
+                    android:visibility="2"
+                    android:layout_width="-1"
+                    android:layout_height="@ref/0x7f070025" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <View
+            android:layout_gravity="0x50"
+            android:id="@ref/0x7f0900de"
+            android:background="@attr/0x7f04008c"
+            android:visibility="2"
+            android:layout_width="-1"
+            android:layout_height="dimension(257)" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@ref/0x7f09004e"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:minHeight="dimension(12289)">
+
+        <FrameLayout
+            android:id="@ref/0x7f09004d"
+            android:layout_width="-1"
+            android:layout_height="-2">
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <include
+        android:layout_width="-1"
+        android:layout_height="-2"
+        layout="@ref/0x7f0c0008" />
+</android.support.v7.widget.AlertDialogLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:id="@ref/0x7f090127"
+    android:layout_width="-1"
+    android:layout_height="-2">
+
+    <LinearLayout
+        android:gravity="0x800013"
+        android:orientation="0"
+        android:id="@ref/0x7f090125"
+        android:paddingLeft="@attr/0x7f0400ac"
+        android:paddingTop="@ref/0x7f070025"
+        android:paddingRight="@attr/0x7f0400ac"
+        android:layout_width="-1"
+        android:layout_height="-2">
+
+        <ImageView
+            android:id="@ref/0x01020006"
+            android:layout_width="dimension(8193)"
+            android:layout_height="dimension(8193)"
+            android:layout_marginRight="dimension(2049)"
+            android:src="@ref/0x00000000"
+            android:scaleType="3"
+            android:layout_marginEnd="dimension(2049)" />
+
+        <android.support.v7.widget.DialogTitle
+            android:ellipsize="3"
+            android:id="@ref/0x7f09001d"
+            android:layout_width="-1"
+            android:layout_height="-2"
+            android:singleLine="true"
+            android:textAlignment="5"
+            style="@attr/0x101005b" />
+    </LinearLayout>
+
+    <android.widget.Space
+        android:id="@ref/0x7f090124"
+        android:visibility="2"
+        android:layout_width="-1"
+        android:layout_height="@ref/0x7f070026" />
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.view.menu.ListMenuItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:layout_width="-1"
+    android:layout_height="-2"
+    android:minWidth="dimension(50177)">
+
+    <ImageView
+        android:id="@ref/0x7f090078"
+        android:background="@ref/0x7f08002e"
+        android:layout_width="-1"
+        android:layout_height="dimension(257)"
+        android:layout_marginTop="dimension(1025)"
+        android:layout_marginBottom="dimension(1025)" />
+
+    <LinearLayout
+        android:id="@ref/0x7f090047"
+        android:duplicateParentState="true"
+        android:layout_width="-1"
+        android:layout_height="@attr/0x7f0400b6"
+        style="@ref/0x7f0e00f0">
+
+        <TextView
+            android:textAppearance="@attr/0x7f0401ab"
+            android:layout_gravity="0x10"
+            android:id="@ref/0x7f090123"
+            android:duplicateParentState="true"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:singleLine="true"
+            style="@ref/0x7f0e00f5" />
+
+        <Space
+            android:layout_width="dimension(1)"
+            android:layout_height="dimension(257)"
+            android:layout_weight="1065353216.000000" />
+
+        <TextView
+            android:textAppearance="@attr/0x7f0401b3"
+            android:layout_gravity="0x10"
+            android:id="@ref/0x7f0900f7"
+            android:duplicateParentState="true"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:singleLine="true"
+            style="@ref/0x7f0e00f2" />
+
+        <ImageView
+            android:layout_gravity="0x11"
+            android:id="@ref/0x7f090112"
+            android:visibility="2"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:scaleType="5"
+            style="@ref/0x7f0e00f3" />
+    </LinearLayout>
+</android.support.v7.view.menu.ListMenuItemView>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:fitsSystemWindows="true"
+    android:layout_width="-1"
+    android:layout_height="-1">
+
+    <TextView
+        android:ellipsize="3"
+        android:id="@ref/0x7f090123"
+        android:paddingLeft="@attr/0x7f0400ac"
+        android:paddingTop="@ref/0x7f070025"
+        android:paddingRight="@attr/0x7f0400ac"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:singleLine="true"
+        android:textAlignment="5"
+        style="@attr/0x101005b" />
+
+    <include
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:layout_weight="1065353216.000000"
+        layout="@ref/0x7f0c0014" />
+</android.support.v7.widget.FitWindowsLinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:fitsSystemWindows="true"
+    android:layout_width="-1"
+    android:layout_height="-1">
+
+    <TextView
+        android:ellipsize="3"
+        android:id="@ref/0x7f090123"
+        android:paddingLeft="@attr/0x7f0400ac"
+        android:paddingTop="@ref/0x7f070025"
+        android:paddingRight="@attr/0x7f0400ac"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:singleLine="true"
+        android:textAlignment="5"
+        style="@attr/0x101005b" />
+
+    <include
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:layout_weight="1065353216.000000"
+        layout="@ref/0x7f0c0014" />
+</android.support.v7.widget.FitWindowsLinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="0x10"
+    android:id="@ref/0x7f090039"
+    android:focusable="false"
+    android:clickable="false"
+    android:duplicateParentState="true"
+    android:layout_width="-2"
+    android:layout_height="-2" />
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="0x10"
+    android:id="@ref/0x7f09007d"
+    android:duplicateParentState="true"
+    android:layout_width="-2"
+    android:layout_height="-2"
+    android:layout_marginLeft="dimension(2049)"
+    android:layout_marginTop="dimension(2049)"
+    android:layout_marginRight="dimension(-2047)"
+    android:layout_marginBottom="dimension(2049)"
+    android:scaleType="7" />
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.view.menu.ListMenuItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="-1"
+    android:layout_height="@attr/0x7f04012a">
+
+    <RelativeLayout
+        android:layout_gravity="0x10"
+        android:duplicateParentState="true"
+        android:layout_width="dimension(1)"
+        android:layout_height="-2"
+        android:layout_marginLeft="@attr/0x7f04012b"
+        android:layout_marginRight="@attr/0x7f04012c"
+        android:layout_weight="1065353216.000000">
+
+        <TextView
+            android:textAppearance="@attr/0x7f0401ae"
+            android:ellipsize="4"
+            android:id="@ref/0x7f090123"
+            android:fadingEdge="0x1000"
+            android:duplicateParentState="true"
+            android:layout_width="-1"
+            android:layout_height="-2"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:textAppearance="@attr/0x1010042"
+            android:id="@ref/0x7f0900f7"
+            android:duplicateParentState="true"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:singleLine="true"
+            android:layout_below="@ref/0x7f090123"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</android.support.v7.view.menu.ListMenuItemView>
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="0x10"
+    android:id="@ref/0x7f0900c7"
+    android:focusable="false"
+    android:clickable="false"
+    android:duplicateParentState="true"
+    android:layout_width="-2"
+    android:layout_height="-2" />
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="dimension(4097)"
+    android:paddingRight="dimension(4097)"
+    android:layout_width="-1"
+    android:layout_height="@attr/0x7f0400b6"
+    android:minWidth="dimension(50177)">
+
+    <TextView
+        android:textAppearance="@attr/0x7f0401b0"
+        android:ellipsize="4"
+        android:layout_gravity="0x10"
+        android:id="@ref/0x01020016"
+        android:fadingEdge="0x1000"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:singleLine="true"
+        android:textAlignment="5" />
+</FrameLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.view.menu.ListMenuItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:layout_width="-1"
+    android:layout_height="-2"
+    android:minWidth="dimension(50177)">
+
+    <ImageView
+        android:id="@ref/0x7f090078"
+        android:background="@ref/0x7f08002e"
+        android:layout_width="-1"
+        android:layout_height="dimension(257)"
+        android:layout_marginTop="dimension(1025)"
+        android:layout_marginBottom="dimension(1025)" />
+
+    <LinearLayout
+        android:id="@ref/0x7f090047"
+        android:duplicateParentState="true"
+        android:layout_width="-1"
+        android:layout_height="@attr/0x7f0400b6"
+        style="@ref/0x7f0e00f0">
+
+        <RelativeLayout
+            android:layout_gravity="0x10"
+            android:duplicateParentState="true"
+            android:layout_width="dimension(1)"
+            android:layout_height="-2"
+            android:layout_weight="1065353216.000000"
+            style="@ref/0x7f0e00f1">
+
+            <TextView
+                android:textAppearance="@attr/0x7f0401ab"
+                android:ellipsize="4"
+                android:id="@ref/0x7f090123"
+                android:fadingEdge="0x1000"
+                android:duplicateParentState="true"
+                android:layout_width="-1"
+                android:layout_height="-2"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                style="@ref/0x7f0e00f4" />
+
+            <TextView
+                android:textAppearance="@attr/0x7f0401b3"
+                android:id="@ref/0x7f0900f7"
+                android:duplicateParentState="true"
+                android:layout_width="-2"
+                android:layout_height="-2"
+                android:singleLine="true"
+                android:layout_below="@ref/0x7f090123"
+                style="@ref/0x7f0e00f4" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_gravity="0x11"
+            android:id="@ref/0x7f090112"
+            android:visibility="2"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:scaleType="5"
+            style="@ref/0x7f0e00f3" />
+    </LinearLayout>
+</android.support.v7.view.menu.ListMenuItemView>
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:id="@ref/0x7f090008"
+        android:layout_width="-1"
+        android:layout_height="-1"
+        android:foreground="@attr/0x1010059"
+        android:foregroundGravity="0x37">
+
+    </android.support.v7.widget.ContentFrameLayout>
+</merge>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:id="@ref/0x7f09000a"
+    android:fitsSystemWindows="true"
+    android:layout_width="-1"
+    android:layout_height="-1">
+
+    <android.support.v7.widget.ViewStubCompat
+        android:id="@ref/0x7f090015"
+        android:layout="@ref/0x7f0c0004"
+        android:inflatedId="@ref/0x7f090014"
+        android:layout_width="-1"
+        android:layout_height="-2" />
+
+    <include
+        layout="@ref/0x7f0c0014" />
+</android.support.v7.widget.FitWindowsLinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@ref/0x7f09000a"
+    android:fitsSystemWindows="true"
+    android:layout_width="-1"
+    android:layout_height="-1">
+
+    <include
+        layout="@ref/0x7f0c0014" />
+
+    <android.support.v7.widget.ViewStubCompat
+        android:id="@ref/0x7f090015"
+        android:layout="@ref/0x7f0c0004"
+        android:inflatedId="@ref/0x7f090014"
+        android:layout_width="-1"
+        android:layout_height="-2" />
+</android.support.v7.widget.FitWindowsFrameLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@ref/0x7f09000a"
+    android:fitsSystemWindows="true"
+    android:layout_width="-1"
+    android:layout_height="-1">
+
+    <include
+        layout="@ref/0x7f0c0014" />
+
+    <android.support.v7.widget.ViewStubCompat
+        android:id="@ref/0x7f090015"
+        android:layout="@ref/0x7f0c0004"
+        android:inflatedId="@ref/0x7f090014"
+        android:layout_width="-1"
+        android:layout_height="-2" />
+</android.support.v7.widget.FitWindowsFrameLayout>
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ActionBarOverlayLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@ref/0x7f090050"
+    android:fitsSystemWindows="true"
+    android:layout_width="-1"
+    android:layout_height="-1">
+
+    <include
+        layout="@ref/0x7f0c0014" />
+
+    <android.support.v7.widget.ActionBarContainer
+        android:gravity="0x30"
+        android:id="@ref/0x7f090009"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:layout_alignParentTop="true"
+        style="@attr/0x7f040005">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@ref/0x7f090007"
+            android:layout_width="-1"
+            android:layout_height="-2"
+            app:navigationContentDescription="@ref/0x7f0d0001"
+            style="@attr/0x7f0401d3" />
+
+        <android.support.v7.widget.ActionBarContextView
+            android:theme="@attr/0x7f040009"
+            android:id="@ref/0x7f09000f"
+            android:visibility="2"
+            android:layout_width="-1"
+            android:layout_height="-2"
+            style="@attr/0x7f04001b" />
+    </android.support.v7.widget.ActionBarContainer>
+</android.support.v7.widget.ActionBarOverlayLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="-1"
+    android:layout_height="dimension(14849)"
+    style="@ref/0x7f0e00f6">
+
+    <ImageView
+        android:id="@ref/0x01020007"
+        android:visibility="1"
+        android:layout_width="@ref/0x7f070029"
+        android:layout_height="dimension(12289)"
+        android:scaleType="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        style="@ref/0x7f0e00f7" />
+
+    <ImageView
+        android:id="@ref/0x7f090060"
+        android:background="@attr/0x7f04015f"
+        android:visibility="2"
+        android:layout_width="dimension(12289)"
+        android:layout_height="dimension(12289)"
+        android:scaleType="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        style="@ref/0x7f0e00f9" />
+
+    <ImageView
+        android:id="@ref/0x01020008"
+        android:visibility="2"
+        android:layout_width="dimension(12289)"
+        android:layout_height="dimension(12289)"
+        android:scaleType="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        style="@ref/0x7f0e00f8" />
+
+    <TextView
+        android:textAppearance="@attr/0x7f0401b1"
+        android:gravity="0x30"
+        android:id="@ref/0x01020015"
+        android:paddingBottom="dimension(1025)"
+        android:visibility="2"
+        android:layout_width="-1"
+        android:layout_height="dimension(7425)"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        style="@attr/0x1010086" />
+
+    <TextView
+        android:textAppearance="@attr/0x7f0401b2"
+        android:id="@ref/0x01020014"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:singleLine="true"
+        android:layout_above="@ref/0x01020015"
+        android:layout_centerVertical="true"
+        style="@attr/0x1010086" />
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="-1"
+    android:layout_height="dimension(14849)"
+    style="@ref/0x7f0e00f6">
+
+    <ImageView
+        android:id="@ref/0x01020007"
+        android:visibility="1"
+        android:layout_width="@ref/0x7f070029"
+        android:layout_height="dimension(12289)"
+        android:scaleType="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        style="@ref/0x7f0e00f7" />
+
+    <ImageView
+        android:id="@ref/0x7f090060"
+        android:background="@attr/0x7f04015f"
+        android:visibility="2"
+        android:layout_width="dimension(12289)"
+        android:layout_height="dimension(12289)"
+        android:scaleType="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        style="@ref/0x7f0e00f9" />
+
+    <ImageView
+        android:id="@ref/0x01020008"
+        android:visibility="2"
+        android:layout_width="dimension(12289)"
+        android:layout_height="dimension(12289)"
+        android:scaleType="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        style="@ref/0x7f0e00f8" />
+
+    <TextView
+        android:textAppearance="@attr/0x7f0401b1"
+        android:gravity="0x30"
+        android:id="@ref/0x01020015"
+        android:paddingBottom="dimension(1025)"
+        android:visibility="2"
+        android:layout_width="-1"
+        android:layout_height="dimension(7425)"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        style="@attr/0x1010086" />
+
+    <TextView
+        android:textAppearance="@attr/0x7f0401b2"
+        android:id="@ref/0x01020014"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:singleLine="true"
+        android:layout_above="@ref/0x01020015"
+        android:layout_centerVertical="true"
+        style="@attr/0x1010086" />
+</RelativeLayout>
+
+<?xml version="1.0" encoding="utf-8"?>
+<view
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@ref/0x7f0900f2"
+    android:scrollbars="0x200"
+    android:fadingEdge="0x0"
+    android:clipToPadding="false"
+    android:layout_width="-1"
+    android:layout_height="-1"
+    android:cacheColorHint="@ref/0x00000000"
+    android:divider="@attr/0x7f040123"
+    android:overScrollMode="1"
+    android:textAlignment="5"
+    app:paddingBottomNoButtons="@ref/0x7f070020"
+    app:paddingTopNoTitle="@ref/0x7f070021"
+    class="android.support.v7.app.AlertController$RecycleListView"
+    style="@ref/0x7f0e01d0" />
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:layout_width="-2"
+    android:layout_height="-2">
+
+    <TextView
+        android:textAppearance="@ref/0x7f0e0120"
+        android:textColor="@attr/0x7f0401d4"
+        android:ellipsize="3"
+        android:id="@ref/0x7f0900a0"
+        android:background="@attr/0x7f0401d5"
+        android:paddingLeft="@ref/0x7f070104"
+        android:paddingTop="@ref/0x7f070108"
+        android:paddingRight="@ref/0x7f070104"
+        android:paddingBottom="@ref/0x7f070108"
+        android:layout_width="-2"
+        android:layout_height="-2"
+        android:layout_margin="@ref/0x7f070105"
+        android:maxWidth="dimension(65537)"
+        android:maxLines="3"
+        android:paddingStart="@ref/0x7f070104"
+        android:paddingEnd="@ref/0x7f070104" />
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@ref/0x7f06008b"
+    android:layout_width="-1"
+    android:layout_height="dimension(12801)">
+
+    <ImageView
+        android:layout_gravity="0x10"
+        android:layout_width="dimension(10753)"
+        android:layout_height="dimension(10753)"
+        android:layout_marginLeft="dimension(2561)"
+        android:src="@ref/0x7f0800ca"
+        android:layout_weight="0.000000"
+        android:contentDescription="@ref/0x00000000" />
+
+    <TextView
+        android:textSize="dimension(6146)"
+        android:textColor="@ref/0x0106000b"
+        android:ellipsize="4"
+        android:layout_gravity="0x10"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:layout_marginLeft="dimension(2049)"
+        android:text="@ref/0x7f0d003b"
+        android:maxLines="1"
+        android:layout_weight="1065353216.000000" />
+
+    <ImageView
+        android:layout_gravity="0x10"
+        android:id="@ref/0x7f0900a4"
+        android:background="@ref/0x7f08005a"
+        android:clickable="true"
+        android:layout_width="dimension(12801)"
+        android:layout_height="-1"
+        android:src="@ref/0x7f08009e"
+        android:scaleType="5"
+        android:contentDescription="@ref/0x00000000" />
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="1"
+    android:background="@ref/0x7f060051"
+    android:layout_width="-1"
+    android:layout_height="-1">
+
+    <include
+        layout="@ref/0x7f0c001e" />
+
+    <ListView
+        android:id="@ref/0x0102000a"
+        android:scrollbars="0x0"
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:cacheColorHint="@ref/0x0106000d" />
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@ref/0x7f06008d"
+    android:layout_width="-1"
+    android:layout_height="@ref/0x7f07004b">
+
+    <LinearLayout
+        android:orientation="0"
+        android:id="@ref/0x7f090028"
+        android:background="@ref/0x7f08005a"
+        android:clickable="true"
+        android:layout_width="dimension(1)"
+        android:layout_height="-1"
+        android:layout_weight="1065353216.000000">
+
+        <ImageView
+            android:layout_gravity="0x10"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:layout_marginLeft="dimension(1537)"
+            android:src="@ref/0x7f08009c"
+            android:contentDescription="@ref/0x00000000" />
+
+        <ImageView
+            android:layout_gravity="0x10"
+            android:layout_width="dimension(10753)"
+            android:layout_height="dimension(10753)"
+            android:src="@ref/0x7f0800ca"
+            android:contentDescription="@ref/0x00000000" />
+
+        <TextView
+            android:textSize="dimension(6146)"
+            android:textColor="@ref/0x0106000b"
+            android:ellipsize="4"
+            android:layout_gravity="0x10"
+            android:layout_width="-1"
+            android:layout_height="-2"
+            android:text="@ref/0x7f0d00df"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="dimension(1025)"
+    android:layout_width="-1"
+    android:layout_height="dimension(14337)">
+
+    <ImageView
+        android:id="@ref/0x7f090021"
+        android:layout_width="dimension(9217)"
+        android:layout_height="dimension(9217)"
+        android:layout_centerVertical="true"
+        android:contentDescription="@ref/0x00000000" />
+
+    <TextView
+        android:textSize="dimension(4098)"
+        android:textColor="@ref/0x0106000c"
+        android:id="@ref/0x7f090022"
+        android:layout_width="-2"
+        android:layout_height="-2"
+        android:layout_marginLeft="dimension(1537)"
+        android:layout_toRightOf="@ref/0x7f090021"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@ref/0x7f090024"
+        android:layout_width="-2"
+        android:layout_height="-2"
+        android:layout_marginRight="dimension(3841)"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@ref/0x7f06008d"
+    android:layout_width="-1"
+    android:layout_height="@ref/0x7f07004b">
+
+    <LinearLayout
+        android:orientation="0"
+        android:id="@ref/0x7f090028"
+        android:background="@ref/0x7f08005a"
+        android:clickable="true"
+        android:layout_width="dimension(1)"
+        android:layout_height="-1"
+        android:layout_weight="1065353216.000000">
+
+        <ImageView
+            android:layout_gravity="0x10"
+            android:layout_width="-2"
+            android:layout_height="-2"
+            android:layout_marginLeft="dimension(1537)"
+            android:src="@ref/0x7f08009c"
+            android:contentDescription="@ref/0x00000000" />
+
+        <ImageView
+            android:layout_gravity="0x10"
+            android:layout_width="dimension(10753)"
+            android:layout_height="dimension(10753)"
+            android:src="@ref/0x7f0800ca"
+            android:contentDescription="@ref/0x00000000" />
+
+        <TextView
+            android:textSize="dimension(6146)"
+            android:textColor="@ref/0x0106000b"
+            android:ellipsize="4"
+            android:layout_gravity="0x10"
+            android:layout_width="-1"
+            android:layout_height="-2"
+            android:text="@ref/0x7f0d00df"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>
+
